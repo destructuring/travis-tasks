@@ -29,6 +29,7 @@ ActiveSupport.on_load(:action_mailer) do
 end
 
 Travis::Exceptions::Reporter.start
+Travis::Metrics.setup
 Travis::Notification.setup
 Travis::Mailer.setup
 Travis::Addons.register
